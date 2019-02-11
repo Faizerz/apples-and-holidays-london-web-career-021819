@@ -47,6 +47,13 @@ def all_supplies_in_holidays(holiday_hash)
       puts "#{season}:"
       festivals.each do |name, supplies|
         puts "#{name}: "
+          supplies.each do |ingredient|
+            print "#{ingredient},"
+          end
+        end
+      end
+    end
+  
       
   # iterate through holiday_hash and print items such that your readout resembles:
   # Winter:
